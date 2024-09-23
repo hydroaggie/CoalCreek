@@ -7,10 +7,13 @@ This repository contains the workflow for estimating baseflow in a snow-dominate
 ## Repository Structure
 
 ```bash
-├── data        # Raw and processed data for hydrologic modeling and baseflow separation
-├── notebooks   # Jupyter Notebooks for running the model, generating statistics, maps, and figures
-└── figures     # Visual outputs (graphs, charts) from the modeling and analysis
+├── data       
+│   ├── model_input           # Input data for hydrologic modeling to run the ATS model
+│
+├── notebooks                 # Jupyter Notebooks for separating baseflow and generating statistics, maps, and figures
+└── figures                   # Visual outputs (graphs, charts) from the modeling and analysis
 ```
+
 
 ## Project Overview
 
@@ -21,7 +24,5 @@ The first part involves running the integrated hydrologic model to quantitativel
 
 ### Baseflow Separation:
 The second part uses the streamflow data obtained from the model. With the notebooks provided in the repository's `notebooks` folder, you can perform baseflow separation using numerical and conceptual methods. The notebooks will also generate all the figures and statistics required for analysis and reporting.
-
-
 
 

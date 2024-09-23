@@ -1,19 +1,27 @@
 # Quantitative Evaluation of Baseflow Separation Methods Using an Integrated Hydrologic Model: A Case Study in a Snow-Dominated Watershed
 
-Citation: Othman, Jihad, "Quantitative Evaluation of Baseflow Separation Methods Using an Integrated Hydrologic Model: A Case Study in a Snow-Dominated Watershed" (2024). [Master's Thesis](https://digitalcommons.usu.edu/gradreports2023/60/)
+**Citation**: Othman, Jihad, "Quantitative Evaluation of Baseflow Separation Methods Using an Integrated Hydrologic Model: A Case Study in a Snow-Dominated Watershed" (2024). [Master's Thesis](https://digitalcommons.usu.edu/gradreports2023/60/)
 
+This repository contains the workflow for estimating baseflow in a snow-dominated watershed using an integrated hydrologic model and baseflow separation methods. It includes tools for visualizing results and performing post-processing data analysis. The project explores multiple conceptual baseflow separation methods.
 
-This repository contains the workflow for applying an integrated hydrologic model to simulate groundwater discharge and estimate baseflow in a snow-dominated watershed. It also explores various conceptual baseflow separation methods, provides tools for visualizing the results, and includes post-processing data analysis. The repository is structured as follows:
+## Repository Structure
 
 ```bash
-├── data
-├── notebooks
-└── figures
+├── data        # Raw and processed data for hydrologic modeling and baseflow separation
+├── notebooks   # Jupyter Notebooks for running the model, generating statistics, maps, and figures
+└── figures     # Visual outputs (graphs, charts) from the modeling and analysis
 ```
 
-- `data`: Contains the raw and processed data used for hydrologic modeling and baseflow separation.
-- `notebooks`: Includes Jupyter Notebooks used for generating maps, running the model, and creating statistics and figures for the baseflow separation methods.
-- `figures`: Stores the visual outputs (graphs, charts) resulting from the modeling and analysis.
+## Project Overview
+
+The project is divided into two parts:
+
+### Hydrologic Model Simulation:
+The first part involves running the integrated hydrologic model to quantitatively estimate streamflow and groundwater discharge. For the complete workflow, model input preparation and ATS model run, refer to the following link: [ATS Workflow](https://github.com/pinshuai/ats-workflow). After creating the input file, run the ATS model to estimate streamflow and other hydrological variables. The input file is provided in `data/model_input`
+
+### Baseflow Separation:
+The second part uses the streamflow data obtained from the model. With the notebooks provided in the repository's `notebooks` folder, you can perform baseflow separation using numerical and conceptual methods. The notebooks will also generate all the figures and statistics required for analysis and reporting.
+
 
 
 

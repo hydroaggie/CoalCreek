@@ -20,7 +20,7 @@ This repository contains the workflow for estimating baseflow in a snow-dominate
 The project is divided into two parts:
 
 ### Hydrologic Model Simulation:
-The first part involves running the integrated hydrologic model to quantitatively estimate streamflow and groundwater discharge. For the complete workflow, model input preparation and ATS model run, refer to the following link: [ATS Workflow](https://github.com/pinshuai/ats-workflow). After creating the input file, run the ATS model to estimate streamflow and other hydrological variables. The input file is provided in `data/model_input`
+The first part involves running the integrated hydrologic model to quantitatively estimate streamflow and groundwater discharge. For the complete workflow, model input preparation and ATS model run, refer to the following link: [ATS Workflow](https://github.com/pinshuai/ats-workflow). After creating the input file, run the ATS model to estimate streamflow and other hydrological variables. The ATS model input file (XML file) is provided in `data/model_input`
 
 ### Baseflow Separation:
 The second part uses the streamflow data obtained from the model. With the notebooks provided in the repository's `notebooks` folder, you can perform baseflow separation using numerical and conceptual methods. The notebooks will also generate all the figures and statistics required for analysis and reporting.

@@ -9,6 +9,7 @@ This repository contains the workflow for estimating baseflow in a snow-dominate
 ```bash
 ├── data       
 │   ├── model_input           # Input data for hydrologic modeling to run the ATS model
+│   ├── model_output          # Output data fobtained from running the ATS model 
 │
 ├── notebooks                 # Jupyter Notebooks for separating baseflow and generating statistics, maps, and figures
 └── figures                   # Visual outputs (graphs, charts) from the modeling and analysis
@@ -20,9 +21,8 @@ This repository contains the workflow for estimating baseflow in a snow-dominate
 The project is divided into two parts:
 
 ### Hydrologic Model Simulation:
-The first part involves running the integrated hydrologic model to quantitatively estimate streamflow and groundwater discharge. For the complete workflow, model input preparation and ATS model run, refer to the following link: [ATS Workflow](https://github.com/pinshuai/ats-workflow). After creating the input file, run the ATS model to estimate streamflow and other hydrological variables. The ATS model input file (XML file) is provided in `data/model_input`
+
+The first part involves running the integrated hydrologic model to quantitatively estimate streamflow and groundwater discharge. For the complete workflow, model input preparation and ATS model run, refer to the following link: [ATS Workflow](https://github.com/pinshuai/ats-workflow). The ATS model requires the input file located at `data/model_input/model_input_2014_2022.xml`. Once the input file is prepared, run the ATS model, which will generate the output file `data/model_output/water_balance-daily.dat`. 
 
 ### Baseflow Separation:
-The second part uses the streamflow data obtained from the model. With the notebooks provided in the repository's `notebooks` folder, you can perform baseflow separation using numerical and conceptual methods. The notebooks will also generate all the figures and statistics required for analysis and reporting.
-
-
+The second part focuses on baseflow separation using the streamflow data from the ATS model output. The notebooks in the `notebooks` folder use the file `data/model_output/water_balance-daily.dat` to perform baseflow separation with subsurface variables and generate figures, plots, and statistics for the report. These notebooks handle the post-processing, including the generation of all statistics and visualizations included in the report.

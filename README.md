@@ -9,7 +9,7 @@ This repository contains the workflow for estimating baseflow in a snow-dominate
 ```bash
 ├── data       
 │   ├── model_input           # Input data for hydrologic modeling to run the ATS model
-│   ├── model_output          # Output data fobtained from running the ATS model 
+│   ├── model_output          # Output data obtained from running the ATS model 
 │
 ├── notebooks                 # Jupyter Notebooks for separating baseflow and generating statistics, maps, and figures
 └── figures                   # Visual outputs (graphs, charts) from the modeling and analysis
